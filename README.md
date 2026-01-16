@@ -23,4 +23,4 @@ npm run test:gherkin
 # Configure Headless modes for plain Playwright tests in \playwright.config.ts
 
 # Output – a HTML report is generated in playwright-report.
-# When using CI pipeline, the Report for Playwright tests is find in Actions Tab under "Upload Playwright report"
+# When using CI pipeline, the Report for Playwright tests is found in Actions Tab under "Upload Playwright report"
