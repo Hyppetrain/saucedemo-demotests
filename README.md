@@ -1,4 +1,4 @@
-This demo project contains to sets of tests, one using plain Playwright + TS, the second one using BDD testing structure using Cucumber (gherkin) scenarios.
+This demo project contains two sets of tests, one using plain Playwright + TS, the second one using BDD testing structure using Cucumber (gherkin) scenarios.
 I included those to showcase the potential advantage of writing tests in a "human" form.
 
 Tests can be ran locally, or you can look at the results from an automated deploy in this repo.
