@@ -38,7 +38,7 @@ test.describe('SauceDemo Basic E2E flow', () => {
         const firstAddButton = inventoryPage.page.locator('.inventory_item').first().locator('button');
         await firstAddButton.click();
 
-        // Cart badge should show "1""
+        // Cart badge should show "1"
         const cartBadge = loginPage.page.locator('.shopping_cart_badge');
         await expect(cartBadge).toHaveText('1');
 
@@ -49,8 +49,9 @@ test.describe('SauceDemo Basic E2E flow', () => {
         await expect(loginPage.page).toHaveURL(/\/cart\.html$/);
 
         // Cart should contain product
-        const firstProduct = getProductName(0);
+        const firstProduct = await getProductName(loginPage.page, 0);
         const cartItem = loginPage.page.locator('.cart_item');
         await expect(cartItem).toContainText(firstProduct);
     });
+
 });

@@ -18,7 +18,7 @@ export const removeFirstProduct = async () => {
     const firstRemoveBtn = inventory.page
         .locator('.inventory_item')
         .first()
-        .locator('button', { hasText: 'Remove' }); // ensures we click the actual "Remove" button
+        .locator('button', { hasText: 'Remove' });
     await firstRemoveBtn.click();
 };
 
