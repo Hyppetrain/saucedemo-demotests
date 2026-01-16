@@ -8,7 +8,7 @@ test.describe('SauceDemo Basic E2E flow', () => {
     let loginPage: LoginPage;
     let inventoryPage: InventoryPage;
 
-    // Runs before each test in this block
+    // Runs before every test
     test.beforeEach(async ({ page }) => {
         loginPage = new LoginPage(page);
         inventoryPage = new InventoryPage(page);
